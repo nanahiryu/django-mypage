@@ -1,0 +1,1 @@
+web: gunicorn mypage_heroku.wsgi
