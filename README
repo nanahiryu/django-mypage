@@ -1,0 +1,7 @@
+requirements.txt
+ここに書き込んだパッケージがHeroku上でインストールされる
+これがあるだけでPythonのプログラムだと判断される
+
+Procfile
+web:項目の内容を実行する
+今回はgunicorn
