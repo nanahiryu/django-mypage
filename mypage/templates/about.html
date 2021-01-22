@@ -1,16 +1,55 @@
 {% extends 'base.html' %}
 {% load humanize %}
 {% block main %}
-    <h1>自己紹介</h1>
-    <h2>実績</h2>
+    <h1 class="title">自己紹介</h1>
+    <h2 class="about_section">実績</h2>
     <p>{% now 'Y年m月d日 H:i' %} までに{{ num_services|intcomma }}個のサービスを作りました！</p>
-    <h2>スキル</h2>
-    
-    {% for skill in skills %}
+    <h2 class="about_section">スキル</h2>
+    <ul class="skills">
+        {% for skill in skills %}
         <li>{{ skill }}</li>
         {% empty %} #skillsが空であれば実行される
         <li>skillがありません。</li>
-    {% endfor %}
+        {% endfor %}
+    </ul>
+    <h2 class="about_section">略歴</h2>
+    <ul class="timeline">
+        <li>
+            <p class="timeline-date">1999年12月</p>
+            <div class="timeline-content">
+                <h3>生まれる</h3>
+                <p>特になし。</p>
+            </div>
+        </li>
+        <li>
+            <p class="timeline-date">2015年4月</p>
+            <div class="timeline-content">
+                <h3>本郷高校入学</h3>
+                <p>特になし。</p>
+            </div>
+        </li>
+        <li>
+            <p class="timeline-date">2018年3月</p>
+            <div class="timeline-content">
+                <h3>本郷高校卒業</h3>
+                <p>おめ。</p>
+            </div>
+        </li>
+        <li>
+            <p class="timeline-date">2018年4月</p>
+            <div class="timeline-content">
+                <h3>慶應義塾大学入学</h3>
+                <p>おめ。</p>
+            </div>
+        </li>
+        <li>
+            <p class="timeline-date">2021年1月</p>
+            <div class="timeline-content">
+                <h3>djangoの勉強がてらmypage作りたいねとなる。</h3>
+                <p>よくよく考えたら自分にできることそんなになくね？となりdjangoの練習がてら作ってみた。</p>
+            </div>
+        </li>
+    </ul>
         
 {% endblock main %}
     

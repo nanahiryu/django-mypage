@@ -1,44 +1,5 @@
 .navbar {
-    height: 50px;
-    padding: 10px auto;
-    border-bottom: 5px solid #ccc;
-    position: relative;
-}
-.navbar ul {
-    position: absolute;
-    left: 0%;
-    display: table;
-    margin: 10px auto;
-    padding: 20px auto;
-    width: 100%;
-    text-align: center;
-}
-.navbar ul li {
-    display: table-cell;
-    min-width: 50px;
-}
-.navbar ul li a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    margin: 0px auto;
-    padding: 10px 10px;
-    text-decoration: none;
-    color: #aaa;
-}
-.navbar ul li.current {
-    font-weight: bold;
-    border-top: 5px solid #00b0f0;
-}
-.navbar ul li.current a {
-    color: #00b0f0;
-}
-.navbar ul li a:hover {
-    color: #0089bb;
-    background-color: #fbfbdd;
-}
-.navbar ul li:hover {
-    border-top: 5px solid #f8e750;
+    background: yellowgreen;
 }
 .welcome_img {
     width: 100%;
@@ -89,10 +50,10 @@
     position: relative;
     height: 75px;
     margin-right: 100px;
-    padding: 1.5rem 2rem 1rem 2rem;
+    padding: 1.5rem 2rem 0 2rem;
     word-break: break-all;
     color: #fff;
-    background: #004e2d;
+    background: #000;
 }
 
 .title:after {
@@ -104,5 +65,5 @@
     content: "";
     border-width: 75px 55px 0 0;
     border-style: solid;
-    border-color: #004e2d transparent transparent transparent;
+    border-color: #000 transparent transparent transparent;
 }

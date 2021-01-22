@@ -1,3 +1,108 @@
 .navbar {
-    background: pink;
+    height: 50px;
+    padding: 10px auto;
+    border-bottom: 5px solid #ccc;
+    position: relative;
+}
+.navbar ul {
+    position: absolute;
+    left: 0%;
+    display: table;
+    margin: 10px auto;
+    padding: 20px auto;
+    width: 100%;
+    text-align: center;
+}
+.navbar ul li {
+    display: table-cell;
+    min-width: 50px;
+}
+.navbar ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #aaa;
+}
+.navbar ul li.current {
+    font-weight: bold;
+    border-top: 5px solid #00b0f0;
+}
+.navbar ul li.current a {
+    color: #00b0f0;
+}
+.navbar ul li a:hover {
+    color: #0089bb;
+    background-color: #fbfbdd;
+}
+.navbar ul li:hover {
+    border-top: 5px solid #f8e750;
+}
+.welcome_img {
+    width: 100%;
+}
+.skills {
+    list-style: none;
+}
+.timeline {
+    list-style: none;
+}
+.timeline > li {
+    margin-bottom: 60px;
+}
+@media (min-width: 640px) {
+    .timeline > li {
+        overflow: hidden;
+        margin: 0;
+        position: relative;
+    }
+    .timeline-date {
+        width: 110px;
+        float: left;
+        margin-top: 20px;
+    }
+    .timeline-content {
+        width: 75%;
+        float: left;
+        border-left: 3px #e5e5d1 solid;
+        padding-left: 30px;
+    }
+}
+.timeline-content:before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #6fc173;
+    position: absolute;
+    left: 106px;
+    top: 24px;
+    border-radius: 100%;
+}
+.about_section {
+    padding: 1rem 2rem;
+    border-left: 6px double #000;
+    background: #f4f4f4;
+}
+.title {
+    position: relative;
+    height: 75px;
+    margin-right: 100px;
+    padding: 1.5rem 2rem 1rem 2rem;
+    word-break: break-all;
+    color: #fff;
+    background: #004e2d;
+}
+
+.title:after {
+    position: absolute;
+    top: 0;
+    right: -55px;
+    width: 0;
+    height: 0;
+    content: "";
+    border-width: 75px 55px 0 0;
+    border-style: solid;
+    border-color: #004e2d transparent transparent transparent;
 }

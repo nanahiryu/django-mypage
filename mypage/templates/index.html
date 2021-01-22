@@ -2,14 +2,7 @@
 {% load static %}
 
 {% block main %}
-    <h1>ホーム</h1>
-    
-    {% if username %}
-        <h2>{{ username }}さん、ようこそ！</h2>
-    {% else %}
-        <h2>匿名さん、ようこそ！</h2>
-    {% endif %}
-        
-    <img src="{% static 'welcome.jpg' %}">
+    <h1 class="title">ホーム</h1>
+    <img class="welcome_img" src="{% static 'welcome.jpg' %}">
 {% endblock main %}
     

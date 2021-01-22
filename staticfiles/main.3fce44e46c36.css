@@ -1,6 +1,5 @@
 .navbar {
-    height: 50px;
-    padding: 10px auto;
+    padding: 20px auto;
     border-bottom: 5px solid #ccc;
     position: relative;
 }
@@ -8,7 +7,7 @@
     position: absolute;
     left: 0%;
     display: table;
-    margin: 10px auto;
+    margin: 20px auto;
     padding: 20px auto;
     width: 100%;
     text-align: center;
@@ -16,12 +15,12 @@
 .navbar ul li {
     display: table-cell;
     min-width: 50px;
+    padding: 20px auto;
 }
 .navbar ul li a {
     display: block;
-    width: 100%;
+    width: 80%;
     height: 100%;
-    margin: 0px auto;
     padding: 10px 10px;
     text-decoration: none;
     color: #aaa;

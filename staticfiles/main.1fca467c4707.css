@@ -1,16 +1,14 @@
 .navbar {
-    height: 50px;
-    padding: 10px auto;
     border-bottom: 5px solid #ccc;
     position: relative;
 }
 .navbar ul {
     position: absolute;
-    left: 0%;
+    left: 10%;
     display: table;
-    margin: 10px auto;
-    padding: 20px auto;
-    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
     text-align: center;
 }
 .navbar ul li {
@@ -21,8 +19,7 @@
     display: block;
     width: 100%;
     height: 100%;
-    margin: 0px auto;
-    padding: 10px 10px;
+    padding: 10px 0;
     text-decoration: none;
     color: #aaa;
 }
@@ -89,7 +86,7 @@
     position: relative;
     height: 75px;
     margin-right: 100px;
-    padding: 1.5rem 2rem 1rem 2rem;
+    padding: 1.5rem 2rem 0 2rem;
     word-break: break-all;
     color: #fff;
     background: #004e2d;
