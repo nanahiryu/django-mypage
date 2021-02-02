@@ -2,54 +2,127 @@
 {% load humanize %}
 {% block main %}
     <h1 class="title">自己紹介</h1>
-    <h2 class="about_section">実績</h2>
-    <p>{% now 'Y年m月d日 H:i' %} までに{{ num_services|intcomma }}個のサービスを作りました！</p>
-    <h2 class="about_section">スキル</h2>
-    <ul class="skills">
-        {% for skill in skills %}
-        <li>{{ skill }}</li>
-        {% empty %} #skillsが空であれば実行される
-        <li>skillがありません。</li>
-        {% endfor %}
-    </ul>
-    <h2 class="about_section">略歴</h2>
-    <ul class="timeline">
-        <li>
-            <p class="timeline-date">1999年12月</p>
-            <div class="timeline-content">
-                <h3>生まれる</h3>
-                <p>特になし。</p>
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h2 class="fw-light">実績</h2>
+                <p class="lead text-muted">{% now 'Y年m月d日 H:i' %} までに{{ num_services|intcomma }}個のサービスを作りました！</p>
             </div>
-        </li>
-        <li>
-            <p class="timeline-date">2015年4月</p>
-            <div class="timeline-content">
-                <h3>本郷高校入学</h3>
-                <p>特になし。</p>
+        </div>
+    </section>
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h2 class="fw-light">スキル</h2>
+                <ul class="list-group">
+                    {% for skill in skills %}
+                    <li class="list-group-item">{{ skill }}</li>
+                    {% empty %} #skillsが空であれば実行される
+                    <li class="list-group-item">skillがありません。</li>
+                    {% endfor %}
+                </ul>
             </div>
-        </li>
-        <li>
-            <p class="timeline-date">2018年3月</p>
-            <div class="timeline-content">
-                <h3>本郷高校卒業</h3>
-                <p>おめ。</p>
+        </div>
+    </section>
+    
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h2 class="fw-light">略歴</h2>
             </div>
-        </li>
-        <li>
-            <p class="timeline-date">2018年4月</p>
-            <div class="timeline-content">
-                <h3>慶應義塾大学入学</h3>
-                <p>おめ。</p>
+        </div>
+    </section>
+    
+    <section id="conference-timeline">
+        <div class="timeline-start">Start</div>
+        <div class="conference-center-line"></div>
+        <div class="conference-timeline-content">
+            <div class="timeline-article">
+                <div class="content-right-container">
+                    <div class="content-right">
+                        <h3>生まれる</h3>
+                        <p>特になし</p>
+                    </div>
+                    <span class="timeline-author">nanahiryu</span>
+                </div>
+                <div class="meta-date">
+                    <span class="date">1999</span>
+                    <span class="month">DEC</span>
+                </div>
             </div>
-        </li>
-        <li>
-            <p class="timeline-date">2021年1月</p>
-            <div class="timeline-content">
-                <h3>djangoの勉強がてらmypage作りたいねとなる。</h3>
-                <p>よくよく考えたら自分にできることそんなになくね？となりdjangoの練習がてら作ってみた。</p>
+            <div class="timeline-article">
+                <div class="content-right-container">
+                    <div class="content-right">
+                        <h3>本郷高校入学</h3>
+                        <p>特になし。</p>
+                    </div>
+                    <span class="timeline-author">nanahiryu</span>
+                </div>
+                <div class="meta-date">
+                    <span class="date">2015</span>
+                    <span class="month">APR</span>
+                </div>
             </div>
-        </li>
-    </ul>
+            <div class="timeline-article">
+                <div class="content-right-container">
+                    <div class="content-right">
+                        <h3>本郷高校卒業</h3>
+                        <p>おめ。</p>
+                    </div>
+                    <span class="timeline-author">nanahiryu</span>
+                </div>
+                <div class="meta-date">
+                    <span class="date">2018</span>
+                    <span class="month">MAR</span>
+                </div>
+            </div>
+            <div class="timeline-article">
+                <div class="content-right-container">
+                    <div class="content-right">
+                        <h3>慶應義塾大学入学</h3>
+                        <p>おめ。</p>
+                    </div>
+                    <span class="timeline-author">nanahiryu</span>
+                </div>
+                <div class="meta-date">
+                    <span class="date">2018</span>
+                    <span class="month">APR</span>
+                </div>
+            </div>
+            <div class="timeline-article">
+                <div class="content-right-container">
+                    <div class="content-right">
+                        <h3>djangoの勉強がてらmypage作りたいねとなる。</h3>
+                        <p>よくよく考えたら自分にできることそんなになくね？となりdjangoの練習がてら作ってみた。</p>
+                    </div>
+                    <span class="timeline-author">nanahiryu</span>
+                </div>
+                <div class="meta-date">
+                    <span class="date">2021</span>
+                    <span class="month">JAN</span>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-end">End</div>
+    </section>
+
+
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h2 class="fw-light">今後の展望・やりたいこと</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">HP作成と平行したDjangoの学習</li>
+                    <li class="list-group-item">Kaggle</li>
+                    <li class="list-group-item">2/28のTOEICに向けての学習</li>
+                    <li class="list-group-item">エベレス関連の自動化</li>
+                    <li class="list-group-item">研究室どうする問題</li>
+                    <li class="list-group-item">インターン申し込み</li>
+                    <li class="list-group-item">こえけん引継ぎ</li>
+                </ul>
+            </div>
+        </div>
+    </section>
         
 {% endblock main %}
     
