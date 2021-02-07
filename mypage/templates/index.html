@@ -11,5 +11,35 @@
             </div>
         </div>
     </section>
+    <dev class="card-deck">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                {% with ''|center:6 as range %}
+                {% for _ in range %}
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
+                                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap">
+                                <title>Placeholder</title>
+                                <rect fill="#868e96" width="100%" height="100%" /><text fill="#dee2e6" dy=".3em" x="50%" y="50%">Image cap</text>
+                            </svg>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">detail text</p>
+                                <a href="#" class="btn btn-primary">Go Content</a>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}    
+                {% endwith %}   
+            </div>
+        </div> 
+    </dev>
+
+        
+
 {% endblock main %}
     

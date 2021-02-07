@@ -24,16 +24,17 @@
     border-style: solid;
     border-color: #004e2d transparent transparent transparent;
 }
-.card {
-    margin: 20px 0;
+.col {
+    margin-top: 5px;
 }
-
+.card {
+    margin-top: 5px;
+}
 /*timeline*/
 body {
     background: #e6e6e6;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    overflow-x: hidden;
 }
 
 /*===== Vertical Timeline =====*/
