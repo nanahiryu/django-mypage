@@ -5,3 +5,13 @@ dj-database-url
 python-dotenv
 psycopg2-binary
 mysqlclient
+pandas
+numpy
+chromedriver-binary
+chromedriver-binary-auto
+django-cleanup
+django-pandas
+beautifulsoup4
+webdriver-manager
+webencodings
+selenium
